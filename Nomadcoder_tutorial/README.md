@@ -46,5 +46,22 @@ const router = useRouter();
 
 ```
 
+CSS_Modules
+
+filename.module.css 파일안에다가 css 정의를하고
+
+```jsx
+import styles from "./filename.module.css"
+
+//
+<nav className={styles.nav}> 이런 형식으로 정의함.
+<a className={router.pathname === "/" ? styels.nav : ""}>HOME</a>
+<a className={${styles.nav}${router.pathname === "/" ? styels.nav : ""}}>HOME</a>
+// 이런식으로 쓴다.
+
+// styled-jsx 라는 것을 쓰지만 나는 그것보단 테일윈드가 더 좋은것 같다.
+```
+
+
 ## 의문
 함수 표현식은 안되나??
