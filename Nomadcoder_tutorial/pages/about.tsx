@@ -1,5 +1,13 @@
+import SEO from "../components/SEO";
+
 function About() {
-  return <>hello</>;
+  return (
+    <>
+      {" "}
+      <SEO title="About" />
+      hello
+    </>
+  );
 }
 
 export default About;
