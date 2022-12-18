@@ -29,7 +29,8 @@ Server Side Rendering(SSR)/Static Pre Rendering => 브라우저가 서버에서 
 import Link from "next/link"
 
 a tag 는 리로딩되기에 리엑트 라우터 돔에서 링크를 썻던것 처럼 링크로 해야 리로딩되지않고 빠르게 볼수있다.
-하지만 넥스트js에서 Link 태그는 스타일이 불가능하다. 안에 A tag나 다른걸로 꾸며줘야한다. classname도 사용불가.
+하지만 넥스트js에서 Link 태그는 스타일이 불가능하다. 안에 A tag나 다른걸로 꾸며줘야한다. classname도 사용불가. 
+--- nextjs 13버전에서는 A 태그를 사용하지않고 Link 태그를 사용해야한다. Link 가 anchor tag로 변경
 ```
 
 ```jsx

@@ -6,13 +6,17 @@ const Nav = () => {
 
   return (
     <div>
-      <Link href="/">
-        <a style={{ color: router.pathname === "/" ? "red" : "blue" }}>HOME</a>
+      <Link
+        href="/"
+        style={{ color: router.pathname === "/" ? "red" : "blue" }}
+      >
+        HOME
       </Link>
-      <Link href="/about">
-        <a style={{ color: router.pathname === "/about" ? "red" : "blue" }}>
-          ABOUT
-        </a>
+      <Link
+        href="/about"
+        style={{ color: router.pathname === "/about" ? "red" : "blue" }}
+      >
+        ABOUT
       </Link>
     </div>
   );
