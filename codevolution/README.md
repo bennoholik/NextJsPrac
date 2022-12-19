@@ -13,14 +13,14 @@ Next Js Version : 13.0.7
 
 
 ## Why NEXT JS ?
----
+
 1. File-system based routing
 2. Search Engine Optimazation
 
 
 
 ## Routing in a Next.js app
----
+
 1. Route with pages
    - Literally file based routing, which means when you create a JS file in pages folder, it becomes a page.
 2. Nested routes
@@ -80,7 +80,7 @@ Next Js Version : 13.0.7
 
 
 ## Pre-rendering & Data Fetching
----
+
 ### **Types of pre-rendering**
 1. Static Generation
    - without data
