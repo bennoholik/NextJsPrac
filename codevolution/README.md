@@ -13,11 +13,14 @@ Next Js Version : 13.0.7
 
 
 ## Why NEXT JS ?
+---
 1. File-system based routing
 2. Search Engine Optimazation
 
 
+
 ## Routing in a Next.js app
+---
 1. Route with pages
    - Literally file based routing, which means when you create a JS file in pages folder, it becomes a page.
 2. Nested routes
@@ -49,13 +52,31 @@ Next Js Version : 13.0.7
 
       function Doc(){
         const router = useRouter();
-        const { params } = router.query
+        const { params = []} = router.query
         console.log(params) // it is an Array that contains params data splitted by '/'.
         
-        return <h1></h1>
+        if (params.length === 2){
+          return (
+            <h1>feature: {params[0]} concept: {params[1]}</h1>
+          )
+        } else if (params.length === 1) {
+          return <h1>feature: {params[0]} </h1>
+        }
+
+
+        return <h1>docs home page</h1>
       }
 
       ```
+    - if you want to access in root of doc page like `/docs`, wrap the square bracket with another square bracket `[[..params]].js` 
 
 5. Navigate from the UI
+    - use `Link` to navigte the route
 6. Programmatically navigate between pages
+    - use `router.push('/pathname')` to navigate to other page. 
+7. Custom 404 page
+    - Simply create `404.js` file in the `page` folder.
+
+
+
+## Pre-rendering & Data Fetching
