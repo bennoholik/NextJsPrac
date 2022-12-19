@@ -35,5 +35,27 @@ Next Js Version : 13.0.7
           - [reviewId].js  
    ```
 4. Catch-all routes
+    - catches all the url segment and maps into one single file. 
+    - `docs/feature1`,`docs/feature1/concept1`,`docs/feature1/concept1/example1`
+    - if your url looks like above and the layout is same, Catch-all routes is the one you need to use.
+    - just simply create file [...params].js like this.
+      ```
+      docs
+        -[...params].js
+      ```
+    - To get the parameter you typed in the url
+      ```jsx
+      import { useRouter } from 'next/router'
+
+      function Doc(){
+        const router = useRouter();
+        const { params } = router.query
+        console.log(params) // it is an Array that contains params data splitted by '/'.
+        
+        return <h1></h1>
+      }
+
+      ```
+
 5. Navigate from the UI
 6. Programmatically navigate between pages
