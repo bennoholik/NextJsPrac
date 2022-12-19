@@ -80,3 +80,16 @@ Next Js Version : 13.0.7
 
 
 ## Pre-rendering & Data Fetching
+---
+### **Types of pre-rendering**
+1. Static Generation
+   - without data
+   - with data
+   - incremental Static Generation
+   - dynamic parameters when fetching data
+2. Server-side Rendering
+   - data fetching
+
+Client-side data fetching
+
+Combining pre-rendering with client-side data fetching
