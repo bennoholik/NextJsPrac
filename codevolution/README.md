@@ -97,21 +97,21 @@ why pre-render?
 
 
 ### **Types of pre-rendering**
-1. Static Generation
+1. Static Site Generation(SSG)
    - without data
    - with data
    - incremental Static Generation
    - dynamic parameters when fetching data
-2. Server-side Rendering
+2. Server-side Rendering(SSR)
    - data fetching
 
 Client-side data fetching
 
 Combining pre-rendering with client-side data fetching
 
-<detail><summary>## Static Generation</summary>
+<details><summary> Static Generation</summary>
 A method of pre-rendering where the HTML pages are generated at built time.
 The HTML with all the data that makes up the content of the web page are generated in advance when you build your application.
 Recommended method to pre-render pages whenever possible. Page can be built once, cached by a CDN and served to the client almost instantly.
 EX: Blog pages, e-commerce Product pages, documentation and marketing pages.
-</detail>
+</details>
