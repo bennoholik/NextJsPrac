@@ -108,3 +108,10 @@ why pre-render?
 Client-side data fetching
 
 Combining pre-rendering with client-side data fetching
+
+<detail><summary>## Static Generation</summary>
+A method of pre-rendering where the HTML pages are generated at built time.
+The HTML with all the data that makes up the content of the web page are generated in advance when you build your application.
+Recommended method to pre-render pages whenever possible. Page can be built once, cached by a CDN and served to the client almost instantly.
+EX: Blog pages, e-commerce Product pages, documentation and marketing pages.
+</detail>
