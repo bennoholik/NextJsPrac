@@ -80,6 +80,21 @@ Next Js Version : 13.0.7
 
 
 ## Pre-rendering & Data Fetching
+React vs Next JS
+By default, Next JS pre-renders every page in the application.
+
+pre-render : Next JS generates HTML for each page in advance instead of having it all done by client-side Javascript.
+No Pre-rendering(Plain React.js app) : (Initial Load : App is not rendered) => (Hydration: React components are initialized and App becomes interactive.)
+
+why pre-render?
+1. Pre-rendering improves performance
+   - In a React app, you need to wait for the Javascript to be executed. Perhaps fetch data from an external API and then render the UI. There is a wait time for the user.
+   - With a pre-rendered page, the HTML is already generated and loads faster.
+2. Pre-rendering helps with SEO
+   - If you're building a blog or an e-commerce site, SEO is a concern. With a React app, if the search engine hts our page, it only sees **a div tag with id equal to root**.
+   - If search engine hits a pre-rendered page though, all the content is present in the source code which will help index that page.
+   - Therefore, if SEO is matter for your app, pre-rendering is what you want.
+
 
 ### **Types of pre-rendering**
 1. Static Generation
