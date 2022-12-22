@@ -80,7 +80,7 @@ Next Js Version : 13.0.7
 
 
 ## Pre-rendering & Data Fetching
-React vs Next JS
+**React vs Next JS**
 By default, Next JS pre-renders every page in the application.
 
 pre-render : Next JS generates HTML for each page in advance instead of having it all done by client-side Javascript.
